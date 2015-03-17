@@ -1,17 +1,19 @@
 {
-  "name": "BVN toolbar",
-  "version": "0.0.1",
-  "description": "A browser action with a popup to give access to all BVN related URLs",
-  "permissions": [],
-  "browser_action": {
-      "default_title": "BVN toolbar",
-      "default_icon": "tropos_icon-04.png",
-      "default_popup": "popup.html"
-  },
-  "icons": { "16": "tropos_icon-04.png",
-             "32": "tropos_icon-03.png",
-             "48": "tropos_icon-02.png",
-            "128": "tropos_icon-01.png" },
-  "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+    "name": "BVN toolbar",
+    "version": "0.0.1",
+    "description": "A browser action with a popup to give access to all BVN related URLs",
+    "permissions": [],
+    "browser_action": {
+        "default_title": "BVN toolbar",
+        "default_icon": "tropos_icon-04.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "tropos_icon-04.png",
+        "32": "tropos_icon-03.png",
+        "48": "tropos_icon-02.png",
+        "128": "tropos_icon-01.png"
+    },
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
 }

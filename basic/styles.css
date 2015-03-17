@@ -14,20 +14,20 @@ text{
   font-size: 28px;
 }
 
-#tropos          path:first-child {fill: rgb(238, 103, 103);}
-#bloomfire       path:first-child {fill: rgb(238, 103, 103);}
-#open-asset      path:first-child {fill: rgb(238, 103, 103);}
-#project-library path:first-child {fill: rgb(238, 103, 103);}
-#phonelist       path:first-child {fill: rgb(238, 103, 103);}
-#archives        path:first-child {fill: rgb(238, 103, 103);}
-#directories     path:first-child {fill: rgb(238, 103, 103);}
-#sharefile       path:first-child {fill: rgb(238, 103, 103);}
-#styleguide      path:first-child {fill: rgb(238, 103, 103);}
-#unpaid          path:first-child {fill: rgb(238, 103, 103);}
-#invoicing       path:first-child {fill: rgb(238, 103, 103);}
-#office-manual   path:first-child {fill: rgb(238, 103, 103);}
-#job-numbers     path:first-child {fill: rgb(238, 103, 103);}
-#echosign        path:first-child {fill: rgb(238, 103, 103);}
-#wiki            path:first-child {fill: rgb(238, 103, 103);}
-#epicor          path:first-child {fill: rgb(238, 103, 103);}
-#support         path:first-child {fill: rgb(238, 103, 103);}
+#tropos          path:first-child {}
+#bloomfire       path:first-child {}
+#open-asset      path:first-child {fill: rgb(197, 96, 59);}
+#project-library path:first-child {fill: rgb(85, 120, 117);}
+#phonelist       path:first-child {fill: rgb(240, 209, 0);}
+#archives        path:first-child {fill: rgb(29, 29, 27);}
+#directories     path:first-child {fill: rgb(30, 130, 96);}
+#sharefile       path:first-child {fill: rgb(222, 50, 54);}
+#styleguide      path:first-child {fill: rgb(0, 94, 151);}
+#unpaid          path:first-child {fill: rgb(0, 94, 151);}
+#invoicing       path:first-child {fill: rgb(240, 209, 0);}
+#office-manual   path:first-child {fill: rgb(222, 50, 54);}
+#job-numbers     path:first-child {fill: rgb(29, 29, 27);}
+#echosign        path:first-child {fill: rgb(30, 130, 96);}
+#wiki            path:first-child {fill: rgb(0, 94, 151);}
+#epicor          path:first-child {fill: rgb(197, 96, 59);}
+#support         path:first-child {fill: rgb(0, 94, 151);}

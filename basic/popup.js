@@ -21,73 +21,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log("Hey guys! The BVN extension seems to have loaded A-OK.");
     $('g').click(function() {
         var fake_a = this.attributes[0].nodeValue;
-        if(fake_a == "tropos"){
-        	console.log(tropos_link);
-        	chrome.tabs.create({'url': tropos_link});
-        }
-        if(fake_a == "bloomfire"){
-        	console.log(bloomfire_link);
-        	chrome.tabs.create({'url': bloomfire_link});
-        }
-        if(fake_a == "open-asset"){
-        	console.log(openasset_link);
-        	chrome.tabs.create({'url': openasset_link});
-        }
-		if (fake_a == "project-library") {
-		    console.log(projects_link);
-		    chrome.tabs.create({'url': projects_link});
-		}
-		if (fake_a == "phonelist") {
-		    console.log(phone_link);
-		    chrome.tabs.create({'url': phone_link});
-		}
-		if (fake_a == "archives") {
-		    console.log(archives_link);
-		    chrome.tabs.create({'url': archives_link});
-		}
-		if (fake_a == "directories") {
-		    console.log(directories_link);
-		    chrome.tabs.create({'url': directories_link});
-		}
-		if (fake_a == "sharefile") {
-		    console.log(sharefile_link);
-		    chrome.tabs.create({'url': sharefile_link});
-		}
-		if (fake_a == "styleguide") {
-		    console.log(mark_link);
-		    chrome.tabs.create({'url': mark_link});
-		}
-		if (fake_a == "unpaid") {
-		    console.log(unpaid_link);
-		    chrome.tabs.create({'url': unpaid_link});
-		}
-		if (fake_a == "invoicing") {
-		    console.log(invoicing_link);
-		    chrome.tabs.create({'url': invoicing_link});
-		}
-		if (fake_a == "office-manual") {
-		    console.log(om_link);
-		    chrome.tabs.create({'url': om_link});
-		}
-		if (fake_a == "job-numbers") {
-		    console.log(jobnum_link);
-		    chrome.tabs.create({'url': jobnum_link});
-		}
-		if (fake_a == "echosign") {
-		    console.log(echosign_link);
-		    chrome.tabs.create({'url': echosign_link});
-		}
-		if (fake_a == "wiki") {
-		    console.log(wiki_link);
-		    chrome.tabs.create({'url': wiki_link});
-		}
-		if (fake_a == "epicor") {
-		    console.log(epicor_link);
-		    chrome.tabs.create({'url': epicor_link});
-		}
-		if (fake_a == "support") {
-		    console.log(support_link);
-		    chrome.tabs.create({'url': support_link});
-		}
+        if (fake_a == "tropos")          {chrome.tabs.create({'url': tropos_link});     }
+        if (fake_a == "bloomfire")       {chrome.tabs.create({'url': bloomfire_link});  }
+        if (fake_a == "open-asset")      {chrome.tabs.create({'url': openasset_link});  }
+        if (fake_a == "project-library") {chrome.tabs.create({'url': projects_link});   }
+        if (fake_a == "phonelist")       {chrome.tabs.create({'url': phone_link});      }
+        if (fake_a == "archives")        {chrome.tabs.create({'url': archives_link});   }
+        if (fake_a == "directories")     {chrome.tabs.create({'url': directories_link});}
+        if (fake_a == "sharefile")       {chrome.tabs.create({'url': sharefile_link});  }
+        if (fake_a == "styleguide")      {chrome.tabs.create({'url': mark_link});       }
+        if (fake_a == "unpaid")          {chrome.tabs.create({'url': unpaid_link});     }
+        if (fake_a == "invoicing")       {chrome.tabs.create({'url': invoicing_link});  }
+        if (fake_a == "office-manual")   {chrome.tabs.create({'url': om_link});         }
+        if (fake_a == "job-numbers")     {chrome.tabs.create({'url': jobnum_link});     }
+        if (fake_a == "echosign")        {chrome.tabs.create({'url': echosign_link});   }
+        if (fake_a == "wiki")            {chrome.tabs.create({'url': wiki_link});       }
+        if (fake_a == "epicor")          {chrome.tabs.create({'url': epicor_link});     }
+        if (fake_a == "support")         {chrome.tabs.create({'url': support_link});    }
     });
 });

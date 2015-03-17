@@ -13,3 +13,21 @@ text{
 #tropos text, #bloomfire text {
   font-size: 28px;
 }
+
+#tropos          path:first-child {fill: rgb(238, 103, 103);}
+#bloomfire       path:first-child {fill: rgb(238, 103, 103);}
+#open-asset      path:first-child {fill: rgb(238, 103, 103);}
+#project-library path:first-child {fill: rgb(238, 103, 103);}
+#phonelist       path:first-child {fill: rgb(238, 103, 103);}
+#archives        path:first-child {fill: rgb(238, 103, 103);}
+#directories     path:first-child {fill: rgb(238, 103, 103);}
+#sharefile       path:first-child {fill: rgb(238, 103, 103);}
+#styleguide      path:first-child {fill: rgb(238, 103, 103);}
+#unpaid          path:first-child {fill: rgb(238, 103, 103);}
+#invoicing       path:first-child {fill: rgb(238, 103, 103);}
+#office-manual   path:first-child {fill: rgb(238, 103, 103);}
+#job-numbers     path:first-child {fill: rgb(238, 103, 103);}
+#echosign        path:first-child {fill: rgb(238, 103, 103);}
+#wiki            path:first-child {fill: rgb(238, 103, 103);}
+#epicor          path:first-child {fill: rgb(238, 103, 103);}
+#support         path:first-child {fill: rgb(238, 103, 103);}

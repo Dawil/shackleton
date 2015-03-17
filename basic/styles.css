@@ -1,0 +1,15 @@
+body {
+	width: 307px;
+	margin: 0;
+	height: 560px;
+}
+a {
+    color: red;
+}
+text{
+	font-family: blender;
+	font-size: 14px;
+}
+#tropos text, #bloomfire text {
+  font-size: 28px;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "BVN toolbar",
+  "version": "0.0.1",
+  "description": "A browser action with a popup to give access to all BVN related URLs",
+  "permissions": [],
+  "browser_action": {
+      "default_title": "BVN toolbar",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  // "content_scripts": [
+  //   {
+  //     "matches": ["http://servicedesk.bvn.com.au:8080/*"],
+  //     "css" : ["man_eng.css"]
+  //   }],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}

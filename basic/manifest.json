@@ -5,7 +5,7 @@
     "permissions": [],
     "browser_action": {
         "default_title": "BVN toolbar",
-        "default_icon": "tropos_icon-04.png",
+        "default_icon":  "tropos_icon-04.png",
         "default_popup": "popup.html"
     },
     "icons": {

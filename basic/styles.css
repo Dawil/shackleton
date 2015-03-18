@@ -18,20 +18,20 @@ text{
 
 #tropos          .bg {fill: none;}
 #bloomfire       .bg {fill: none;}
-#open-asset      .bg {fill: rgb(197, 96, 59);}
-#project-library .bg {fill: rgb(85, 120, 117);}
-#phonelist       .bg {fill: rgb(240, 209, 0);}
-#archives        .bg {fill: rgb(29, 29, 27);}
-#directories     .bg {fill: rgb(30, 130, 96);}
-#sharefile       .bg {fill: rgb(222, 50, 54);}
-#styleguide      .bg {fill: rgb(0, 94, 151);}
-#unpaid          .bg {fill: rgb(0, 94, 151);}
-#invoicing       .bg {fill: rgb(240, 209, 0);}
-#office-manual   .bg {fill: rgb(222, 50, 54);}
-#job-numbers     .bg {fill: rgb(29, 29, 27);}
-#echosign        .bg {fill: rgb(30, 130, 96);}
-#wiki            .bg {fill: rgb(0, 94, 151);}
-#epicor          .bg {fill: rgb(197, 96, 59);}
-#support         .bg {fill: rgb(0, 94, 151);}
+#open-asset      .bg {fill: rgb(197,  96,  59);}
+#project-library .bg {fill: rgb( 85, 120, 117);}
+#phonelist       .bg {fill: rgb(240, 209,   0);}
+#archives        .bg {fill: rgb( 29,  29,  27);}
+#directories     .bg {fill: rgb( 30, 130,  96);}
+#sharefile       .bg {fill: rgb(222,  50,  54);}
+#styleguide      .bg {fill: rgb(  0,  94, 151);}
+#unpaid          .bg {fill: rgb( 96,  73,  98);}
+#invoicing       .bg {fill: rgb(240, 209,   0);}
+#office-manual   .bg {fill: rgb(222,  50,  54);}
+#job-numbers     .bg {fill: rgb( 29,  29,  27);}
+#echosign        .bg {fill: rgb( 30, 130,  96);}
+#wiki            .bg {fill: rgb( 96,  73,  98);}
+#epicor          .bg {fill: rgb(197,  96,  59);}
+#support         .bg {fill: rgb(  0,  94, 151);}
 
 /*.bg:hover{  stroke: red;}*/

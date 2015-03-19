@@ -17,26 +17,48 @@ var support_link     = "http://servicedesk.bvn.com.au:8080";
 var tropos_link      = "http://blogs.bvn.com.au/tropos";
 var bloomfire_link   = "https://bvn.bloomfire.com/";
 
+function whenClicked(link, timer){
+    //chrome.tabs.create({'url': link});
+    var payload = ["perf", "clicked", link, Date.now() - timer];
+    _gaq.push(payload);
+    console.log(payload);
+};
+
 document.addEventListener("DOMContentLoaded", function(event) {
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = 'https://ssl.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-93352-12']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(["open", "clicked", "link", timer]);
+
     console.log("Hey guys! The BVN extension seems to have loaded A-OK.");
+    var timer = Date.now();
+    console.log(timer);
+
     $('g').click(function() {
         var fake_a = this.attributes[0].nodeValue;
-        if (fake_a == "tropos")          {chrome.tabs.create({'url': tropos_link});     }
-        if (fake_a == "bloomfire")       {chrome.tabs.create({'url': bloomfire_link});  }
-        if (fake_a == "open-asset")      {chrome.tabs.create({'url': openasset_link});  }
-        if (fake_a == "project-library") {chrome.tabs.create({'url': projects_link});   }
-        if (fake_a == "phonelist")       {chrome.tabs.create({'url': phone_link});      }
-        if (fake_a == "archives")        {chrome.tabs.create({'url': archives_link});   }
-        if (fake_a == "directories")     {chrome.tabs.create({'url': directories_link});}
-        if (fake_a == "sharefile")       {chrome.tabs.create({'url': sharefile_link});  }
-        if (fake_a == "styleguide")      {chrome.tabs.create({'url': mark_link});       }
-        if (fake_a == "unpaid")          {chrome.tabs.create({'url': unpaid_link});     }
-        if (fake_a == "invoicing")       {chrome.tabs.create({'url': invoicing_link});  }
-        if (fake_a == "office-manual")   {chrome.tabs.create({'url': om_link});         }
-        if (fake_a == "job-numbers")     {chrome.tabs.create({'url': jobnum_link});     }
-        if (fake_a == "echosign")        {chrome.tabs.create({'url': echosign_link});   }
-        if (fake_a == "wiki")            {chrome.tabs.create({'url': wiki_link});       }
-        if (fake_a == "epicor")          {chrome.tabs.create({'url': epicor_link});     }
-        if (fake_a == "support")         {chrome.tabs.create({'url': support_link});    }
+        if (fake_a == "tropos")          {whenClicked(tropos_link      , timer);     }
+        if (fake_a == "bloomfire")       {whenClicked(bloomfire_link   , timer);  }
+        if (fake_a == "open-asset")      {whenClicked(openasset_link   , timer);  }
+        if (fake_a == "project-library") {whenClicked(projects_link    , timer);   }
+        if (fake_a == "phonelist")       {whenClicked(phone_link       , timer);      }
+        if (fake_a == "archives")        {whenClicked(archives_link    , timer);   }
+        if (fake_a == "directories")     {whenClicked(directories_link , timer);}
+        if (fake_a == "sharefile")       {whenClicked(sharefile_link   , timer);  }
+        if (fake_a == "styleguide")      {whenClicked(mark_link        , timer);       }
+        if (fake_a == "unpaid")          {whenClicked(unpaid_link      , timer);     }
+        if (fake_a == "invoicing")       {whenClicked(invoicing_link   , timer);  }
+        if (fake_a == "office-manual")   {whenClicked(om_link          , timer);         }
+        if (fake_a == "job-numbers")     {whenClicked(jobnum_link      , timer);     }
+        if (fake_a == "echosign")        {whenClicked(echosign_link    , timer);   }
+        if (fake_a == "wiki")            {whenClicked(wiki_link        , timer);       }
+        if (fake_a == "epicor")          {whenClicked(epicor_link      , timer);     }
+        if (fake_a == "support")         {whenClicked(support_link     , timer);    }
     });
 });

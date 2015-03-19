@@ -19,7 +19,7 @@ var bloomfire_link   = "https://bvn.bloomfire.com/";
 
 function whenClicked(link, timer){
     //chrome.tabs.create({'url': link});
-    var payload = ["perf", "clicked", link, Date.now() - timer];
+    var payload = ['_trackEvent', "perf", "clicked", link, Date.now() - timer];
     _gaq.push(payload);
     console.log(payload);
 };
@@ -35,11 +35,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-93352-12']);
     _gaq.push(['_trackPageview']);
-    _gaq.push(["open", "clicked", "link", timer]);
 
     console.log("Hey guys! The BVN extension seems to have loaded A-OK.");
     var timer = Date.now();
-    console.log(timer);
 
     $('g').click(function() {
         var fake_a = this.attributes[0].nodeValue;

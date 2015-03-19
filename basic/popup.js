@@ -18,15 +18,13 @@ var tropos_link      = "http://blogs.bvn.com.au/tropos";
 var bloomfire_link   = "https://bvn.bloomfire.com/";
 
 function whenClicked(link, timer){
-    //chrome.tabs.create({'url': link});
+    chrome.tabs.create({'url': link});
     var payload = ['_trackEvent', "perf", "clicked", link, Date.now() - timer];
     _gaq.push(payload);
     console.log(payload);
 };
 
-document.addEventListener("DOMContentLoaded", function(event) {
-
-    (function() {
+(function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = 'https://ssl.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -35,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-93352-12']);
     _gaq.push(['_trackPageview']);
+
+document.addEventListener("DOMContentLoaded", function(event) {
 
     console.log("Hey guys! The BVN extension seems to have loaded A-OK.");
     var timer = Date.now();

@@ -19,7 +19,8 @@ var bloomfire_link   = "https://bvn.bloomfire.com/";
 
 function whenClicked(link, timer){
     chrome.tabs.create({'url': link});
-    var payload = ['_trackEvent', "perf", "clicked", link, Date.now() - timer];
+    var payload = ['_trackEvent', "perf",  "clicked", link,      Date.now() - timer];
+    //              _trackEvent,  category, action,   opt_label, opt_value,           opt_noninteraction)
     _gaq.push(payload);
     console.log(payload);
 };

@@ -1,4 +1,5 @@
 # shackleton
+<img src="http://www.smh.com.au/ffxImage/urlpicture_id_1073877766882_2004/01/12/240shackleton.jpg" align="right" alt="Shackleton, wearing a nice jumper">
 This is a pretty cool navigation extension for Chrome.
 
 ## Process

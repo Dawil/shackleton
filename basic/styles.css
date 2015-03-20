@@ -15,7 +15,7 @@ text{
   font-size: 28px;
 }
 
-#topbar{fill:rgb(33, 150, 243);}
+#topbar{fill: rgb(  0,  94, 151);}
 
 #tropos          .bg {fill: none;}
 #bloomfire       .bg {fill: none;}
@@ -36,23 +36,42 @@ text{
 #support         .bg {fill: rgb(  0,  94, 151);}
 
 .shadow {
-  opacity: 0.01;
+  opacity: 0.1;
   fill: white;
   transition: 0.2s;
 }
+#phone-shadow {  opacity: 0.3;}
 
-#open-asset:hover       > #oa-shadow { opacity: 0.3;}
-#project-library:hover  > #project-shadow { opacity: 0.3;}
-#phonelist:hover        > #phone-shadow { opacity: 0.3;}
-#archives:hover         > #archive-shadow { opacity: 0.3;}
-#directories:hover      > #dir-shadow { opacity: 0.3;}
+/*#open-asset:hover       > #oa-shadow        { opacity: 0.3;}
+#project-library:hover  > #project-shadow   { opacity: 0.3;}
+#phonelist:hover        > #phone-shadow     { opacity: 0.3;}
+#archives:hover         > #archive-shadow   { opacity: 0.3;}
+#directories:hover      > #dir-shadow       { opacity: 0.3;}
 #sharefile:hover        > #sharefile-shadow { opacity: 0.3;}
-#styleguide:hover       > #styleguide-shadow { opacity: 0.3;}
-#unpaid:hover           > #unpaid-shadow { opacity: 0.3;}
-#invoicing:hover        > #invoice-shadow { opacity: 0.3;}
-#office-manual:hover    > #om-shadow { opacity: 0.3;}
-#job-numbers:hover      > #jobnum-shadow { opacity: 0.3;}
-#echosign:hover         > #echosign-shadow { opacity: 0.3;}
-#wiki:hover             > #wiki-shadow { opacity: 0.3;}
-#epicor:hover           > #epicor-shadow { opacity: 0.3;}
-#support:hover          > #support-shadow { opacity: 0.3;}
+#styleguide:hover       > #styleguide-shadow{ opacity: 0.3;}
+#unpaid:hover           > #unpaid-shadow    { opacity: 0.3;}
+#invoicing:hover        > #invoice-shadow   { opacity: 0.3;}
+#office-manual:hover    > #om-shadow        { opacity: 0.3;}
+#job-numbers:hover      > #jobnum-shadow    { opacity: 0.3;}
+#echosign:hover         > #echosign-shadow  { opacity: 0.3;}
+#wiki:hover             > #wiki-shadow      { opacity: 0.3;}
+#epicor:hover           > #epicor-shadow    { opacity: 0.3;}
+#support:hover          > #support-shadow   { opacity: 0.3;}*/
+
+#open-asset:hover       > .bg { opacity: 0.8;}
+#project-library:hover  > .bg { opacity: 0.8;}
+#phonelist:hover        > .bg { opacity: 0.8;}
+#archives:hover         > .bg { opacity: 0.8;}
+#directories:hover      > .bg { opacity: 0.8;}
+#sharefile:hover        > .bg { opacity: 0.8;}
+#styleguide:hover       > .bg { opacity: 0.8;}
+#unpaid:hover           > .bg { opacity: 0.8;}
+#invoicing:hover        > .bg { opacity: 0.8;}
+#office-manual:hover    > .bg { opacity: 0.8;}
+#job-numbers:hover      > .bg { opacity: 0.8;}
+#echosign:hover         > .bg { opacity: 0.8;}
+#wiki:hover             > .bg { opacity: 0.8;}
+#epicor:hover           > .bg { opacity: 0.8;}
+#support:hover          > .bg { opacity: 0.8;}
+#tropos:hover           > .bg { fill:white; opacity:0.3;}
+#bloomfire:hover        > .bg { fill:white; opacity:0.3;}

@@ -40,7 +40,7 @@ text{
   fill: white;
   transition: 0.2s;
 }
-#phone-shadow {  opacity: 0.3;}
+#phone-shadow { opacity: 0.3;} /*yellow background is too hard to see the shadow against*/
 
 /*#open-asset:hover       > #oa-shadow        { opacity: 0.3;}
 #project-library:hover  > #project-shadow   { opacity: 0.3;}
